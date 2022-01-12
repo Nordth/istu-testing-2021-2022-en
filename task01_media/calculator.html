@@ -1,0 +1,149 @@
+<!doccalcType html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <style>
+            .calc{
+                margin: 20px;
+                background: #EEE;
+                padding:15px;
+                display:inline-block;
+            }
+            .calc-but button{
+                width:40px;
+                height:40px;
+            }
+            #calc_val{
+                text-align: right;
+            }
+        </style>        
+    </head>
+    <body>
+        
+        <div class="calc">
+            <div class="calc-val">
+                <input type="text" id="calc_val" readonly >
+            </div>
+            <table class="calc-but">
+                <tr>
+                    <td>
+                        <button onclick="calcBackspace()">←</button>
+                    </td>
+                    <td>
+                        <button onclick="calcClear()">CE</button>
+                    </td>
+                    <td>
+                        <button onclick="calcClear()">C</button>
+                    </td>
+                    <td>
+                        <button onclick="calcOp('*')">*</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="calcType(1)">1</button>
+                    </td>
+                    <td>
+                        <button onclick="calcType(2)">2</button>
+                    </td>
+                    <td>
+                        <button onclick="calcType(3)">3</button>
+                    </td>
+                    <td>
+                        <button onclick="calcOp('/')">/</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="calcType(4)">4</button>
+                    </td>
+                    <td>
+                        <button onclick="calcType(5)">5</button>
+                    </td>
+                    <td>
+                        <button onclick="calcType(6)">6</button>
+                    </td>
+                    <td>
+                        <button onclick="calcOp('+')">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="calcType(1)">7</button>
+                    </td>
+                    <td>
+                        <button onclick="calcType(8)">8</button>
+                    </td>
+                    <td>
+                        <button onclick="calcType(9)">9</button>
+                    </td>
+                    <td>
+                        <button  onclick="calcOp('-')">-</button>
+                    </td>
+                </tr>            
+                <tr>
+                    <td>
+                        <button onclick="calcInv()">+/-</button>
+                    </td>
+                    <td>
+                        <button onclick="calcType(0)">0</button>
+                    </td>
+                    <td>
+                        <button  onclick="calcType(',')">,</button>
+                    </td>
+                    <td>
+                        <button  onclick="calcOp('=')">=</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <script>
+        
+            var stored_val = null;
+            var stored_op = null;
+            
+            var calc_val = document.querySelector('#calc_val')
+            function calcType(x){
+                calc_val.value += x;
+            }
+            
+            function calcClear(){
+                calc_val.value = '';
+            }
+            
+            function calcBackspace(){
+                if (calc_val.value > 0){
+                    calc_val.value = calc_val.value.substring(0, calc_val.value.length - 1)
+                }
+            }
+            function calcInv(){
+                if (calc_val.value[0] === '-') calc_val.value = calc_val.value.substring(1);
+                else calc_val.value = '-' + calc_val.value;
+            }
+            
+            function calcOp(op){
+                if (stored_op){
+                    switch(stored_op){
+                        case '+': stored_val = stored_val + parseFloat(calc_val.value); break;
+                        case '-': stored_val = stored_val - parseFloat(calc_val.value); break;
+                        case '/': stored_val = stored_val / parseFloat(calc_val.value); break;
+                        case '*': stored_val = stored_val * parseFloat(calc_val.value); break;
+                    }
+                }
+                else {
+                    stored_val = parseFloat(calc_val.value);
+                }
+                if (op === '='){
+                    calc_val.value = stored_val;
+                    stored_op = null;
+                    stored_val = null;
+                }
+                else {           
+                    calc_val.value = '';
+                    stored_op = op;
+                }
+            }
+        </script>
+    </body>
+</html>
