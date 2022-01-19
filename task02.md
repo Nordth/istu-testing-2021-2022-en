@@ -1,4 +1,4 @@
-# Task 4
+# Task 2
 
 For the following functions:
 1) Create [control flow graph](https://en.wikipedia.org/wiki/Control-flow_graph) of function
