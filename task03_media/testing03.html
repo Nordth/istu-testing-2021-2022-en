@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+     <title>Cost of shipping calculator</title>
+  </head>
+  <body>
+     <form onsubmit="calculate()">
+        Enter distance and weight of package:
+        <input type="text" id="weight">
+        <input type="text" id="km">
+        <button>Calculate</button>
+     </form>
+     <script>
+       function calculate(){
+         var km = document.getElementById("km");
+         var weight = document.getElementById("weight");
+         if (weight.value >= 100) alert("Error!");
+         var cost_val = km * weight * 5;
+         if (cost_val < 100) cost = 100;
+         alert("Result: " + cost_val);
+       }
+     </script>
+  </body>  
+</html>
