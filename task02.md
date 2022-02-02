@@ -153,17 +153,20 @@ Additional tasks
 **Additional task 1**
 ```
 function reverseBits(input, bitsCount) {
-  let reversedBits = 0;
+  let reversedBits = 0;                                                          // 1
 
-  for (let bitIndex = 0; bitIndex < bitsCount; bitIndex += 1) {
-    reversedBits *= 2;
+  for (let bitIndex = 0;                                                         // 2
+           bitIndex < bitsCount;                                                 // 3 
+           bitIndex += 1                                                         // 4
+ ) {
+    reversedBits *= 2;                                                           // 5
 
-    if (Math.floor(input / (1 << bitIndex)) % 2 === 1) {
-      reversedBits += 1;
+    if (Math.floor(input / (1 << bitIndex)) % 2 === 1) {                         // 6
+      reversedBits += 1;                                                         // 7
     }
   }
 
-  return reversedBits;
+  return reversedBits;                                                           // 8
 }
 ```
 
