@@ -6,3 +6,9 @@
 |Paye Jonathan S                   |    |    |    |    |    |    |    |    |
 |Saidy Buba                        | ✔  | ✔ |    |    |    |    |    |    |
 |Swen Samuel Mccarthy              |    |    |    |    |    |    |    |    |
+
+Additional tasks:
+-----------------
+**Paye Jonathan S: **
+
+Additional task 1 `[ ]`
