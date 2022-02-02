@@ -39,7 +39,7 @@ Specifications:
 
 **Specification 1.** 
 
-The user enters the number of tickets he wants to buy. Number of tickrts should be less than 10. 
+The user enters the number of tickets he wants to buy. Number of tickets should be less than 10. 
 
 Program calculates total price by formula and prints result: N * $100. 
 
