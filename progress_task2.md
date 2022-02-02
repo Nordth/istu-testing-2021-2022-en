@@ -9,6 +9,6 @@
 
 Additional tasks:
 -----------------
-**Paye Jonathan S: **
+**Paye Jonathan S:**
 
 Additional task 1 `[ ]`
