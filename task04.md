@@ -79,7 +79,7 @@ Program ask user to enter old password, new password and repeat the new password
 
 If any of entered passwords are empty print message "Enter passwords".
 
-If old password is not corrent, print message "Wrong old password"
+If old password is not correct, print message "Wrong old password"
 
 If length of new password less than 8 characters, print message: "Too short password"
 
