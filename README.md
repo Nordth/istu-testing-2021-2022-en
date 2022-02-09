@@ -2,6 +2,7 @@
 
 - [Progress](progress.md)
 - [Progress of task 2](progress_task2.md)
+- [Progress of task 4](progress_task4.md)
 
 Tasks:
 - [Task 1](task01.md)
