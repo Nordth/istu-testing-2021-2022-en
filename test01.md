@@ -344,7 +344,7 @@ export function cocktailShakerSort (items) {
 --------------------------------------
 
 
-**2) Define equivalence classes and prepare test cases**
+**2) Define equivalence classes and prepare test cases ([See task 4](task04.md))**
 
 | Variant   | Specification             |
 |-----------|------------------------|
