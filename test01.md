@@ -342,3 +342,14 @@ export function cocktailShakerSort (items) {
 
 
 --------------------------------------
+
+
+**2) Define equivalence classes and prepare test cases**
+
+| Variant   | Specification             |
+|-----------|------------------------|
+| 1         | User enters several numbers. Program should calculate average value of entered numbers, round it to three decimal places and print to user in format "9.999" (ex. "0.123"). If the number of entered values is zero, print "0.000". Every non-numeric values should be ignored. User can input fractional values using "." (1.15) and "," (1,15) as separator |
+| 2         | The user enters in the format "YYYY-MM-DD" or in the format "YYYY-MM" (in the second case, the first day of the month is assumed). The program should print the number of days that have passed since the beginning of the year. If the user entered the wrong date, print "WRONG DATE". If the user entered empty string instead of date, print nothing |
+| 3         | User enters two strings. If the first entered string contains the second one, program should print found position of substring, otherwise print 'NO'. If the first string is empty, print "EMPTY". If the second string is empty, print "0". If the second string is longer than the first one, print "ERROR" |
+| 4         | User enters multi-line text. Program should print the shortest line from the entered text. Empty lines should be ignored. If entire entered text is empty, print message "EMPTY TEXT". If there are multiple shortest strings, print them all.  |
+| 5         | User enters coordinates of two points: start position and end position. Points' coordinates consist of two integer numbers. Program should calculate distance between two entered points. If resultant value is fractional, round it to two decimal places and print it in format "9.99" (ex, "3.14"). If it is integer print it in format "9" (ex, "42")  |
