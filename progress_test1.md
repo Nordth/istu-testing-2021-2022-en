@@ -4,5 +4,5 @@
 |Albasu Faisal Bashir              | 1     | ✔  | ✔ | ✔ | 5  |  
 |Borbor Emmanuel T-Wayne           | 2     | ✔  | ✔ |    |    |        
 |Paye Jonathan S                   | 4     | ✔  | ✔ |    |    |     
-|Saidy Buba                        | 3     | ✔  |    |    |    |    
+|Saidy Buba                        | 3     | ✔  | ✔  |    |    |    
 |Swen Samuel Mccarthy              |       |    |    |    |    |   
