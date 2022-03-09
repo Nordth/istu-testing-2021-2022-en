@@ -8,7 +8,7 @@ Function should check if input string contains valid phone number and transform 
 
 * valid phone number should consists of 11 digits
 * first digit in valid phone number should be 7 or 8. (if it is 8 change it to 7)
-* valid phone number can have plus sign at begining of the input strng
+* valid phone number can have plus sign at begining of the input string
 * valid phone number can have opening parenthesis between 1st and 2st digits
 * valid phone number can have closing parenthesis between 4st and 5st digits
 * valid phone number can have any number of dashes (`-`) and spaces
